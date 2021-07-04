@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:background="@color/White"
+    android:layout_marginTop="70dp"
+    android:launchMode="singleTop"
+    tools:context=".ConfirmFinalOrderActivity">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+    <TextView
+
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please Confirm your details before making Order"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/shippment_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt"
+        android:inputType="number"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:hint="Phone Number"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+        />
+
+    <EditText
+        android:id="@+id/shippment_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippment_phone_number"
+        android:hint="FullName...."
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+        />
+
+    <TextView
+        android:id="@+id/Shippment_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shippment_name"
+        android:hint="Home Address"
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+        android:background="@drawable/input_design"
+        />
+
+            <TextView
+                android:id="@+id/selector"
+                android:layout_marginTop="295dp"
+                android:layout_marginLeft="45dp"
+                android:padding="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginRight="45dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_design"
+                android:hint="Select Your Location: "
+                />
+            <Spinner
+                android:layout_marginTop="20dp"
+
+                android:layout_below="@+id/Shippment_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"
+
+
+                android:padding="20dp"
+                android:outlineSpotShadowColor="@color/red"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimary"
+
+                android:layout_marginLeft="45dp"
+
+                android:layout_marginRight="45dp"
+                >
+
+            </Spinner>
+
+
+
+            <TextView
+                android:id="@+id/Shippment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner"
+                android:hint="Shippment fee"
+                android:layout_marginTop="-5dp"
+                android:padding="20dp"
+
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="@color/colorPrimary"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+
+                />
+
+    <TextView
+        android:id="@+id/Shippment_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner"
+
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:background="@drawable/input_design"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="@color/colorPrimary"
+        android:layout_marginLeft="45dp"
+        android:layout_marginRight="45dp"
+
+        />
+
+<!--            <EditText-->
+<!--                android:id="@+id/Shippment_fee"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/Shippment_location"-->
+<!--                android:hint="Shippment fee"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:padding="20dp"-->
+<!--                android:textColor="@color/colorPrimaryDark"-->
+<!--                android:textColorHint="@color/colorPrimary"-->
+<!--                android:layout_marginLeft="45dp"-->
+<!--                android:layout_marginRight="45dp"-->
+<!--                android:background="@drawable/input_design"-->
+<!--                />-->
+
+
+    <Button
+       android:layout_below="@+id/Shippment_location"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:id="@+id/confirm_final_order_btn"
+        android:layout_marginLeft="120dp"
+        android:textAllCaps="false"
+        android:text="Proceed"
+        android:background="@drawable/input_design"
+        android:backgroundTint="@color/green"
+
+
+        />
+            <Button
+                android:layout_below="@+id/confirm_final_order_btn"
+
+                android:id="@+id/proceed"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+
+
+                android:background="@color/White"
+                android:textSize="20dp"
+                />
+
+
+        </RelativeLayout></ScrollView>
+
+</RelativeLayout>

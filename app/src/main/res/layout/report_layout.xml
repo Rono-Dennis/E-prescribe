@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/e4"
+        >
+
+        <TextView
+            android:id="@+id/AmountToBePaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Product Amount: "
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            />
+
+
+
+        <TextView
+            android:id="@+id/Phones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="PhoneNumber: "
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:layout_below="@+id/AmountToBePaid"
+
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:id="@+id/DateAndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Date Time: "
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:layout_below="@+id/Phones"
+
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/UsersId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="User Id: "
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:layout_below="@+id/DateAndTime"
+
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/AmountPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Paid Amount: "
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:layout_below="@+id/UsersId"
+
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/BalanceRemain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Balance: "
+            android:textColor="@color/colorWhite"
+            android:textSize="14dp"
+            android:layout_below="@+id/AmountPaid"
+
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+        <Button
+            android:id="@+id/show_all_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Generate Invoice"
+            android:textSize="18dp"
+            android:textColor="@color/colorindigo"
+            android:layout_below="@id/BalanceRemain"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

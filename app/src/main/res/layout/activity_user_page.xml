@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UserPage">
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/refreher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:padding="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                ></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+
+                android:padding="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="185dp"
+                    android:src="@drawable/profile"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Dashboard"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-70dp"
+                    android:textColor="@color/colorWhite"/>
+                <TextView
+                    android:id="@+id/DrugAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="-0dp"
+                    android:text="Drug Amount= Ksh"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/shippment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="-0dp"
+                    android:text="Shippment Amount= Ksh"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/pay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:text="Amount to pay = Ksh "
+                    android:textSize="13sp"
+
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="130dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/location"
+                                android:src="@drawable/history"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/name3"
+                                android:text="View my Drug Order"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="3dp"
+                                android:textColor="@color/colorindigo"
+                                android:layout_below="@id/location">
+
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/admin_logout_btn"
+                                android:src="@drawable/logout"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/name4"
+                                android:text="Generate Invoice"
+                                android:textSize="10sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="3dp"
+                                android:textColor="@color/colorindigo"
+                                android:layout_below="@id/admin_logout_btn">
+
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:orientation="horizontal">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:id="@+id/fff"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/chat"
+                                android:src="@drawable/chatty"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/name5"
+                                android:text="Message Pharmacist"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="5dp"
+                                android:textColor="@color/colorindigo"
+                                android:layout_below="@id/chat">
+
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        app:cardCornerRadius="20dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ImageView
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:id="@+id/history"
+                                android:src="@drawable/lipanampesa"
+                                android:layout_centerInParent="true"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/name6"
+                                android:text="Make Payment"
+                                android:textSize="13sp"
+                                android:textStyle="bold"
+                                android:layout_centerInParent="true"
+                                android:layout_marginTop="3dp"
+                                android:textColor="@color/colorindigo"
+                                android:layout_below="@id/history">
+
+                            </TextView>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout></RelativeLayout></ScrollView>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>

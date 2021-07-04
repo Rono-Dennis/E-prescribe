@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AdminCategoryActivity">
+
+
+
+
+           <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+               android:layout_below="@+id/eeee"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+               tools:ignore="NotSibling">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+
+                android:padding="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                ></LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:id="@+id/eeee"
+                    android:padding="20dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="185dp"
+                        android:src="@drawable/profile"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin Dashboard"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-50dp"
+                        android:textColor="@color/colorWhite"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 items"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="-0dp"
+                        android:textColor="@color/colorWhite"/>
+                </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="130dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal">
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/mccutcheon"
+                    android:src="@drawable/upload3"
+                    android:layout_centerInParent="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/name1"
+                    android:text="Upload Drugs"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorindigo"
+                    android:layout_below="@id/mccutcheon">
+
+                </TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                app:cardCornerRadius="20dp">
+
+                <RelativeLayout
+                    android:layout_width="192dp"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/check_orders"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/cart" />
+
+                    <TextView
+                        android:id="@+id/name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/check_orders"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="3dp"
+                        android:text="Check Orders"
+                        android:textColor="@color/colorindigo"
+                        android:textSize="10sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/location"
+                            android:src="@drawable/mapmarker"
+                            android:layout_centerInParent="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name3"
+                            android:text="User Location"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/colorindigo"
+                            android:layout_below="@id/location">
+
+                        </TextView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/admin_logout_btn"
+                            android:src="@drawable/category"
+                            android:layout_centerInParent="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name4"
+                            android:text=" Drug Categories"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/colorindigo"
+                            android:layout_below="@id/admin_logout_btn">
+
+                        </TextView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/chat"
+                            android:src="@drawable/chatty"
+                            android:layout_centerInParent="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name5"
+                            android:text="chat Users"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorindigo"
+                            android:layout_below="@id/chat">
+
+                        </TextView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/history"
+                            android:src="@drawable/history"
+                            android:layout_centerInParent="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name6"
+                            android:text="History"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/colorindigo"
+                            android:layout_below="@id/history">
+
+                        </TextView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/payment_history"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/history" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name7"
+                            android:text="Payment History"
+                            android:textSize="6sp"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorindigo"
+                            android:layout_below="@id/payment_history">
+
+                        </TextView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="130dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:id="@+id/message"
+                            android:src="@drawable/asmin"
+                            android:layout_centerInParent="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/name8"
+                            android:text="View uploaded drug"
+                            android:textSize="5sp"
+                            android:textStyle="bold"
+                            android:layout_centerInParent="true"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/colorindigo"
+                            android:layout_below="@id/message">
+
+                        </TextView>
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout></RelativeLayout></ScrollView>
+
+
+
+
+</RelativeLayout>

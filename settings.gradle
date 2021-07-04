@@ -1,0 +1,4 @@
+include ':classes'
+include ':stkpush'
+include ':app'
+rootProject.name = "prescribe"

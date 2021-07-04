@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+
+    tools:context=".Payment">
+    <ImageView
+        android:id="@+id/mpesalogo"
+        android:layout_width="wrap_content"
+        android:layout_height="159dp"
+        android:src="@drawable/lipanampesa"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+         android:textColor="#008000"
+        android:text="Mpesa Online Checkout"
+        android:textAllCaps="true"
+        android:textSize="18sp"
+        android:layout_below="@id/mpesalogo"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/phoneET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        android:textColorHint="#008000"
+        android:textColor="#008000"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/amountET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Amount"
+        android:textColorHint="#008000"
+        android:textColor="#008000"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="startMpesa"
+        android:id="@+id/btnmpesa"
+        android:background="#008000"
+        android:text="Pay" />
+    <ImageView
+        android:layout_below="@id/btnmpesa"
+        android:layout_width="389dp"
+        android:src="@drawable/mpesa"
+        android:layout_height="360dp"/>
+
+</LinearLayout>

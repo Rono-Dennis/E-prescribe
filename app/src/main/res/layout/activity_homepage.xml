@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent"
+    tools:context=".Homepage"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/inputsearchs"
+        android:hint="Search Drug"
+        android:background="@drawable/input_search"
+        android:paddingLeft="20dp"
+
+        android:paddingBottom="8dp"
+        android:drawableRight="@drawable/search"
+        android:paddingRight="10dp"
+        android:layout_margin="20dp"/>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/imgBanner"/>
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recycler_menu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:scrollbars="vertical"-->
+<!--        android:below="@id/imgBanner"-->
+<!--        >-->
+<!--    </androidx.recyclerview.widget.RecyclerView>-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Browse Categories"
+        android:id="@+id/category"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recycler_menu"
+                 ></androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout></LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+
+
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            app:cardCornerRadius="20dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/lightcyan"-->
+<!--                android:layout_height="100dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:id="@+id/Hallucinogens"-->
+<!--                    android:src="@drawable/acemetophen"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/name1"-->
+<!--                    android:text="Hallucinogens"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-4dp"-->
+<!--                    android:textColor="@color/colorindigo"-->
+<!--                    android:layout_below="@id/Hallucinogens">-->
+
+<!--                </TextView>-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            app:cardCornerRadius="20dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:background="@color/lightcyan">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/Depressants"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/adizem" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/name2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@id/Depressants"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-3dp"-->
+<!--                    android:text="Depressants"-->
+<!--                    android:textColor="@color/colorindigo"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </TextView>-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </LinearLayout>-->
+
+<!--    <ScrollView-->
+<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_height="fill_parent"-->
+<!--        android:layout_below="@+id/eeee"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        tools:ignore="NotSibling">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="fill_parent"-->
+<!--            >-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:orientation="horizontal">-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            app:cardCornerRadius="20dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/lightcyan"-->
+<!--                android:layout_height="100dp">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:id="@+id/antibiotic"-->
+<!--                    android:src="@drawable/acarbosa"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    />-->
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/name7"-->
+<!--                    android:text="Antibiotics"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-3dp"-->
+<!--                    android:textColor="@color/colorindigo"-->
+<!--                    android:layout_below="@id/antibiotic">-->
+
+<!--                </TextView>-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="130dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_marginLeft="8dp"-->
+<!--            android:layout_marginRight="8dp"-->
+<!--            app:cardCornerRadius="20dp">-->
+
+<!--            <RelativeLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:background="@color/lightcyan"-->
+<!--                android:layout_height="100dp">-->
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/PainKiller"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="80dp"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:src="@drawable/aprovel" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/name8"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_below="@+id/PainKiller"-->
+<!--                    android:layout_centerInParent="true"-->
+<!--                    android:layout_marginTop="-3dp"-->
+<!--                    android:text="PainKillers"-->
+<!--                    android:textColor="@color/colorindigo"-->
+<!--                    android:textSize="10sp"-->
+<!--                    android:textStyle="bold">-->
+
+<!--                </TextView>-->
+<!--            </RelativeLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--    </LinearLayout>-->
+
+<!--    </RelativeLayout></ScrollView>-->
+
+
+</LinearLayout>
