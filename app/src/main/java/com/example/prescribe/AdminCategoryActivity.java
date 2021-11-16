@@ -34,7 +34,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
        // benedik=findViewById(R.id.benedik);
         //trey=findViewById(R.id.trey);
 
-        mccutcheon=findViewById(R.id.mccutcheon);
+//        mccutcheon=findViewById(R.id.mccutcheon);
         checkOrders = findViewById(R.id.check_orders);
         Location=findViewById(R.id.location);
         logoutbtn=findViewById(R.id.admin_logout_btn);
