@@ -102,7 +102,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         mccutcheon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AdminCategoryActivity.this, HistoryPayment.class);
+                Intent intent = new Intent(AdminCategoryActivity.this, AdminPage.class);
                 intent.putExtra("category", "mccutcheon");
                 startActivity(intent);
             }

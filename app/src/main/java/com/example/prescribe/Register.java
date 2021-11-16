@@ -21,7 +21,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
 
-import de.measite.minidns.record.A;
+//import de.measite.minidns.record.A;
 
 public class Register extends AppCompatActivity {
     private Button register;

@@ -46,7 +46,7 @@ dependencies {
     implementation 'com.firebase:firebase-client-android:2.5.1'
     implementation 'com.firebaseui:firebase-ui:0.3.1'
     implementation 'com.github.Hitomis:CircleMenu:v1.1.0'
-    implementation 'com.cometchat:pro-android-chat-sdk:1.8.8'
+//    implementation 'com.cometchat:pro-android-chat-sdk:1.8.8'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.material:material:1.0.0'
 

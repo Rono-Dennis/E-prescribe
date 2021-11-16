@@ -1,12 +1,13 @@
 package com.example.prescribe.Model;
 
 public class Orders {
-  private   String address,  date, name, phone,uid, time, totalAmount,orderNo;
-  private int city, pid;
+  private   String address,  date, name, phone,uid, time, totalAmount,orderNo, pid, city;
+
 
     public Orders() {}
 
-    public Orders(String address, String date, String name, String phone, String uid, String time, String totalAmount, String orderNo, int city, int pid) {
+
+    public Orders(String address, String date, String name, String phone, String uid, String time, String totalAmount, String orderNo, String pid, String city) {
         this.address = address;
         this.date = date;
         this.name = name;
@@ -15,8 +16,8 @@ public class Orders {
         this.time = time;
         this.totalAmount = totalAmount;
         this.orderNo = orderNo;
-        this.city = city;
         this.pid = pid;
+        this.city = city;
     }
 
     public String getAddress() {
@@ -83,19 +84,35 @@ public class Orders {
         this.orderNo = orderNo;
     }
 
-    public int getCity() {
-        return city;
-    }
-
-    public void setCity(int city) {
-        this.city = city;
-    }
-
-    public int getPid() {
+    public String getPid() {
         return pid;
     }
 
-    public void setPid(int pid) {
+    public void setPid(String pid) {
         this.pid = pid;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    @Override
+    public String toString() {
+        return "Orders{" +
+                "address='" + address + '\'' +
+                ", date='" + date + '\'' +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", uid='" + uid + '\'' +
+                ", time='" + time + '\'' +
+                ", totalAmount='" + totalAmount + '\'' +
+                ", orderNo='" + orderNo + '\'' +
+                ", pid='" + pid + '\'' +
+                ", city='" + city + '\'' +
+                '}';
     }
 }

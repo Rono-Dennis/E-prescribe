@@ -38,7 +38,7 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
     private Spinner spinner, spinner_parent,spinner_child;
     private  String totalAmount ="";
     private int shippedTotal = 0;
-    private String saveCurrentDate, saveCurrentTime, DateTime,ordernum;
+    private String saveCurrentDate, saveCurrentTime, DateTime,ordernum, userid, currentTimee;
     FirebaseAuth mAuth;
     private DatabaseReference usereference;
     private  String CurrentUsername, CurrentuserPhone,CurrentuserEmail, Location, Address;
@@ -317,36 +317,41 @@ public class ConfirmFinalOrderActivity extends AppCompatActivity {
         Random random = new Random();
         int value=random.nextInt(10000)+5;
         ordernum=String.valueOf(value);
+        userid=String.valueOf(CurrentUsername);
         int shipped = Integer.parseInt(cityEditText.getText().toString());
 
         int shippedTotal = (Integer.valueOf(totalAmount) + Integer.valueOf (shipped));
 
+        String shiptotal= String.valueOf(shippedTotal);
+        String amountTotal = String.valueOf(totalAmount);
+        currentTimee  = String.valueOf(saveCurrentTime);
+        String timedate = String.valueOf(DateTime);
 
         final HashMap<String, Object> orderMap = new HashMap<>();
-        orderMap.put("totalAmount", totalAmount);
-        orderMap.put("uid",CurrentUsername);
+        orderMap.put("totalAmount", amountTotal);
+        orderMap.put("uid",userid);
         orderMap.put("pid",cityEditText.getText().toString());
         orderMap.put("name", nameEditText.getText().toString());
         orderMap.put("phone", phoneEditText.getText().toString());
         orderMap.put("address", addressEdiText.getText().toString());
-        orderMap.put("city", shippedTotal);
-        orderMap.put("date", DateTime);
-        orderMap.put("time", saveCurrentTime);
+        orderMap.put("city", shiptotal);
+        orderMap.put("date", timedate);
+        orderMap.put("time", currentTimee);
         orderMap.put("orderNo", ordernum);
 
-        final HashMap<String, Object> orderView = new HashMap<>();
-        orderView.put("totalAmount", totalAmount);
-        orderView.put("uid",CurrentUsername);
-        orderView.put("pid",cityEditText.getText().toString());
-        orderView.put("name", nameEditText.getText().toString());
-        orderView.put("phone", phoneEditText.getText().toString());
-        orderView.put("address", cityEditText.getText().toString());
-        orderView.put("city", shippedTotal);
-        orderView.put("date", DateTime);
-        orderView.put("time", saveCurrentTime);
-        orderMap.put("orderNo", ordernum);
+//        final HashMap<String, Object> orderView = new HashMap<>();
+//        orderView.put("totalAmount", totalAmount);
+//        orderView.put("uid",CurrentUsername);
+//        orderView.put("pid",cityEditText.getText().toString());
+//        orderView.put("name", nameEditText.getText().toString());
+//        orderView.put("phone", phoneEditText.getText().toString());
+//        orderView.put("address", cityEditText.getText().toString());
+//        orderView.put("city", shippedTotal);
+//        orderView.put("date", DateTime);
+//        orderView.put("time", saveCurrentTime);
+//        orderMap.put("orderNo", ordernum);
 
-        userViewer.updateChildren(orderView);
+        userViewer.updateChildren(orderMap);
 
         ordersListRef.updateChildren(orderMap).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override

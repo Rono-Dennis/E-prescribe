@@ -39,8 +39,10 @@
       <w>productid</w>
       <w>productref</w>
       <w>shippment</w>
+      <w>shiptotal</w>
       <w>submited</w>
       <w>textview</w>
+      <w>timedate</w>
       <w>useref</w>
       <w>usereference</w>
       <w>useres</w>
