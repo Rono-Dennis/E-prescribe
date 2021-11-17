@@ -1,8 +1,5 @@
 package com.example.prescribe;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,16 +11,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.prescribe.Model.Admins;
-import com.example.prescribe.Model.Users;
-import com.example.prescribe.Prevalent.Prevalent;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
-
-import io.paperdb.Paper;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class AdminLoginActivity extends AppCompatActivity {
 
@@ -87,15 +75,9 @@ public class AdminLoginActivity extends AppCompatActivity {
                 {
                     if (InputPassword.getText().toString().equals(correctPassword))
                     {
-                        try {
-                            Intent intent = new Intent(AdminLoginActivity.this, AdminCategoryActivity.class);
-                            startActivity(intent);
-                            Toast.makeText(AdminLoginActivity.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
-                        }catch(Exception e)
-                        {
-                            e.printStackTrace();
-                        }
-
+                        Intent intent = new Intent(AdminLoginActivity.this, AdminCategoryActivity.class);
+                        startActivity(intent);
+                        Toast.makeText(AdminLoginActivity.this, "Successfully Logged in", Toast.LENGTH_SHORT).show();
                     }
 //                    Intent intent = new Intent(AdminLoginActivity.this, AdminCategoryActivity.class);
 //                    startActivity(intent);
