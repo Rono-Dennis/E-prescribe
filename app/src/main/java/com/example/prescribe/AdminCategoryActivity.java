@@ -41,7 +41,7 @@ public class AdminCategoryActivity extends AppCompatActivity {
         Chat=findViewById(R.id.chat);
         History=findViewById(R.id.history);
         PaymentHistory=findViewById(R.id.payment_history);
-        ProductHistory=findViewById(R.id.message);
+//        ProductHistory=findViewById(R.id.message);
 
         PaymentHistory.setOnClickListener(new View.OnClickListener() {
              @Override
@@ -50,13 +50,13 @@ public class AdminCategoryActivity extends AppCompatActivity {
                  startActivity(intent);
              }
          });
-         ProductHistory.setOnClickListener(new View.OnClickListener() {
-             @Override
-             public void onClick(View v) {
-                 Intent intent = new Intent(AdminCategoryActivity.this, ActivityProductHistory.class);
-                 startActivity(intent);
-             }
-         });
+//         ProductHistory.setOnClickListener(new View.OnClickListener() {
+//             @Override
+//             public void onClick(View v) {
+//                 Intent intent = new Intent(AdminCategoryActivity.this, ActivityProductHistory.class);
+//                 startActivity(intent);
+//             }
+//         });
 
         checkOrders.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,14 +99,14 @@ public class AdminCategoryActivity extends AppCompatActivity {
 
 
 
-        mccutcheon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AdminCategoryActivity.this, AdminPage.class);
-                intent.putExtra("category", "mccutcheon");
-                startActivity(intent);
-            }
-        });
+//        mccutcheon.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(AdminCategoryActivity.this, AdminPage.class);
+//                intent.putExtra("category", "mccutcheon");
+//                startActivity(intent);
+//            }
+//        });
 
 
     }
